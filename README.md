@@ -1,6 +1,7 @@
 # ddmetrics2csv
 
- % python3 ddmetrics2csv.py -h
+```
+% python3 ddmetrics2csv.py -h
 usage: ddmetrics2csv.py [-h] -i API_KEY -p APP_KEY -q QUERY [-s START_TIME]
                         [-e END_TIME] [-o OUTPUT_FILE]
 
@@ -22,3 +23,4 @@ optional arguments:
                         format. [Default: Now]
   -o OUTPUT_FILE, --output-file OUTPUT_FILE
                         Filename to write CSV contents into. [Default: stdout]
+```
