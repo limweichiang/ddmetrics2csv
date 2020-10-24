@@ -1,4 +1,12 @@
-# ddmetrics2csv
+# Overview
+
+ddmetrics2csv is a tool to query the Datadog platform for metrics using API and outputs the data in comma-separated values (CSV) format.
+
+The tool is useful for obtaining metrics for external analytics/reporting, in situations where the analytics/reporting tool does not support JSON.
+
+For more information about the Datadog platform APIs used by the tool, you can refer to https://docs.datadoghq.com/api/v1/metrics/#query-timeseries-points
+
+# Usage
 
 ```
 % python3 ddmetrics2csv.py -h
@@ -24,3 +32,6 @@ optional arguments:
   -o OUTPUT_FILE, --output-file OUTPUT_FILE
                         Filename to write CSV contents into. [Default: stdout]
 ```
+# Example
+
+// TBC
