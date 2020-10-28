@@ -35,12 +35,14 @@ optional arguments:
 # Example
 
 This is an example with the optional arguments provided to specify the data collection window, and file name to output to.
+```
 % python3 ./ddmetrics2csv.py \
  -i <API Key redacted> \
  -p <App Key redacted> \
  -q 'avg:system.processes.number{*} by {host,process_name}' \
  -s 2020-10-01-00-00 \
  -e 2020-10-02-23-59 \
- -o process-count.csv
- 
- The results of this is attached as process-count.csv
+ -o example-result-process-count.csv
+```
+  
+The result is file that looks like [this](./example-result-process-count.csv)
