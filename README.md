@@ -45,4 +45,18 @@ This is an example with the optional arguments provided to specify the data coll
  -o example-result-process-count.csv
 ```
   
-The result is file that looks like [this](./example-result-process-count.csv)
+The result is file that looks like this:
+
+```
+aggr;attributes;display_name;end;expression;interval;length;metric;query_index;scope;start;tag_set;datapoint_time;datapoint_data;unit_family;unit_id;unit_name;unit_plural;unit_scale_factor;unit_short_name
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601481600000.0;3.0;system;20;process;processes;1.0;proc
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601482200000.0;3.0;system;20;process;processes;1.0;proc
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601482800000.0;3.0;system;20;process;processes;1.0;proc
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601483400000.0;3.0;system;20;process;processes;1.0;proc
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601484000000.0;3.0;system;20;process;processes;1.0;proc
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601484600000.0;3.0;system;20;process;processes;1.0;proc
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601485200000.0;3.0;system;20;process;processes;1.0;proc
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601485800000.0;3.0;system;20;process;processes;1.0;proc
+avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601486400000.0;3.0;system;20;process;processes;1.0;proc
+
+```
