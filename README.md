@@ -6,8 +6,21 @@ The tool is useful for obtaining metrics for external analytics/reporting, in si
 
 For more information about the Datadog platform APIs used by the tool, you can refer to https://docs.datadoghq.com/api/v1/metrics/#query-timeseries-points
 
-# Usage
+# Requirements
 
+I've only developed against these requirements, so YMMV. Do raise an issue (or better, fix and send me a PR) if you encounter problems with updated libraries.
+```
+% pip3 freeze
+certifi==2020.6.20
+chardet==3.0.4
+datadog==0.39.0
+decorator==4.4.2
+idna==2.10
+requests==2.24.0
+urllib3==1.25.10
+```
+
+# Usage
 ```
 % python3 ddmetrics2csv.py -h
 usage: ddmetrics2csv.py [-h] -i API_KEY -p APP_KEY -q QUERY [-s START_TIME]
@@ -33,7 +46,6 @@ optional arguments:
                         Filename to write CSV contents into. [Default: stdout]
 ```
 # Example
-
 This is an example with the optional arguments provided to specify the data collection window, and file name to output to.
 ```
 % python3 ./ddmetrics2csv.py \
@@ -46,7 +58,6 @@ This is an example with the optional arguments provided to specify the data coll
 ```
   
 The result is file that looks like this:
-
 ```
 aggr;attributes;display_name;end;expression;interval;length;metric;query_index;scope;start;tag_set;datapoint_time;datapoint_data;unit_family;unit_id;unit_name;unit_plural;unit_scale_factor;unit_short_name
 avg;{};system.processes.number;1601654399000;avg:system.processes.number{host:i-1234567890abcdefg,process_name:php-fpm7.2};600;288;system.processes.number;0;host:i-1234567890abcdefg,process_name:php-fpm7.2;1601481600000;['host:i-1234567890abcdefg', 'process_name:php-fpm7.2'];1601481600000.0;3.0;system;20;process;processes;1.0;proc
